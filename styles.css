@@ -54,17 +54,36 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Кнопка Зберегти Пост */
+/* Кнопка Зберегти Пост */
 .btn-primary {
   background: linear-gradient(90deg, #4caf50, #2ecc71);
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Плавна анімація */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-transform: uppercase; /* Великі літери для кнопки */
 }
 
+/* Ховер-ефект для кнопки Зберегти Пост */
 .btn-primary:hover {
-  background: #2ecc71;
-  transform: scale(1.1);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid #2ecc71;
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+  background: linear-gradient(90deg, #2ecc71, #4caf50);
+  transform: scale(1.1); /* Збільшення кнопки */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тінь більш виразна */
+  border: 1px solid #2ecc71; /* Яскравий контур при ховері */
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.4); /* Світлий ефект навколо тексту */
 }
+
+/* Відновлення нормального вигляду при скиданні ховера */
+.btn-primary:active {
+  transform: scale(1.05);
+  background: #2ecc71;
+}
+
 
 /* Кнопка Редагувати */
 .btn-edit {

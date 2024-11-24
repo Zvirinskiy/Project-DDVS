@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Управління Постами</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📋 Управління Постами</h1>
+  </header>
+
+  <main>
+    <section id="post-form" class="form-section">
+      <h2>Додати Новий Пост</h2>
+      <input type="text" id="post-title" placeholder="Заголовок Посту">
+      <textarea id="post-description" placeholder="Опис"></textarea>
+      <input type="text" id="post-author" placeholder="Автор">
+      <input type="date" id="post-date">
+      <button id="save-post" class="btn btn-primary">Зберегти Пост</button>
+    </section>
+    
+
+    <section id="posts-list" class="posts-section">
+      <h2>📚 Усі Пости</h2>
+      <div id="post-filters">
+        <input type="text" id="search" placeholder="Пошук за заголовком або автором">
+        <select id="sort-posts">
+          <option value="date">Сортувати за датою</option>
+          <option value="author">Сортувати за автором</option>
+        </select>
+      </div>
+      <ul id="post-items"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Управління Постами</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

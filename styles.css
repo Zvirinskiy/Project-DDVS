@@ -1,0 +1,149 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f8fa;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(90deg, #4caf50, #45aaf2);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section, .posts-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+input, textarea, select {
+  width: calc(100% - 24px);
+  max-width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #45aaf2;
+  box-shadow: 0 0 8px rgba(69, 170, 242, 0.5);
+}
+
+/* Стиль для кнопок */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Кнопка Зберегти Пост */
+.btn-primary {
+  background: linear-gradient(90deg, #4caf50, #2ecc71);
+}
+
+.btn-primary:hover {
+  background: #2ecc71;
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #2ecc71;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+}
+
+/* Кнопка Редагувати */
+.btn-edit {
+  background: #ff9800;
+}
+
+.btn-edit:hover {
+  background: #e68900;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка Видалити */
+.btn-delete {
+  background: #f44336;
+}
+
+.btn-delete:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль для елементів списку */
+.post-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.post-item .actions {
+  display: flex;
+  gap: 15px;
+}
+
+.post-item .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.post-item .btn-edit {
+  background: #ff9800;
+}
+
+.post-item .btn-edit:hover {
+  background: #e68900;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-item .btn-delete {
+  background: #f44336;
+}
+
+.post-item .btn-delete:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
